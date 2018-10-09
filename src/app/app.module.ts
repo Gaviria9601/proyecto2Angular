@@ -6,6 +6,7 @@ import { MaterialModule } from './modules/material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 
 // Componentes
@@ -30,7 +31,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
