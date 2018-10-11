@@ -1,29 +1,29 @@
-<mat-toolbar color="primary">Signup</mat-toolbar>
+<mat-toolbar color="primary">Registro</mat-toolbar>
 <div class="example-container">
   <mat-form-field>
-    <input matInput placeholder="First Name" required>
+    <input matInput placeholder="Nombres" required>
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Last Name" required>
+    <input matInput placeholder="Apellidos" required>
   </mat-form-field>
   <mat-form-field>
-    <input matInput [matDatepicker]="picker" placeholder="Choose a Birthdate">
+    <input matInput [matDatepicker]="picker" placeholder="Fecha de Nacimiento">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Enter your email" [formControl]="email" required>
+    <input matInput placeholder="Digite su Correo" [formControl]="email" required>
     <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+    <input matInput placeholder="Digite su Contraseña" [type]="hide ? 'password' : 'text'">
     <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
   </mat-form-field>
 </div>
 <div class="container-fluid">
   <div class="row center-xs">
     <div class="button-row">
-      <button mat-raised-button color="primary">Signup</button>
+      <button mat-raised-button color="primary">Registrar</button>
     </div>
   </div>
 </div>

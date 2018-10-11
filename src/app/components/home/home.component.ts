@@ -12,13 +12,15 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   imageUrls: (string | IImage)[] = [
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56748793/dbohn_170625_1801_0018.0.0.jpg', caption: 'The first slide', href: '#config' },
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/9278671/jbareham_170917_2000_0124.jpg', clickAction: () => alert('custom click function') },
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56789263/akrales_170919_1976_0104.0.jpg', caption: 'Apple TV', href: 'https://www.apple.com/' },
-    'https://cdn.vox-cdn.com/uploads/chorus_image/image/56674755/mr_pb_is_the_best.0.jpg',
-    { url: 'assets/kitties.jpg', backgroundSize: 'contain', backgroundPosition: 'center' }
+    { url: '../../../assets/1.jpg' },
+    { url: '../../../assets/2.jpg' },
+    { url: '../../../assets/3.jpg' },
+    { url: '../../../assets/4.jpg' },
+    { url: '../../../assets/5.jpg' },
+    { url: '../../../assets/6.jpg' },
+    { url: '../../../assets/7.jpg' }
   ];
-  height: string = '400px';
+  height: string = '695px';
   minHeight: string;
   arrowSize: string = '30px';
   showArrows: boolean = true;
@@ -40,10 +42,6 @@ export class HomeComponent implements OnInit {
   width: string = '100%';
 
   ngOnInit() {
-    // adding an image url dynamically.
-    setTimeout(() => {
-      console.log('adding an image url dynamically.');
-      this.imageUrls.push('https://cdn-images-1.medium.com/max/2000/1*Nccd2ofdArlXF7v58UK94Q.jpeg');
-    }, 2000);
 
+  }
 }

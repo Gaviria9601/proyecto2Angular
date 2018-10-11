@@ -1,18 +1,32 @@
-<mat-toolbar color="primary" >Login</mat-toolbar>
+<mat-toolbar color="primary">Ingreso</mat-toolbar>
+<br/>
+<div class="row center-xs">
+  <mat-card class="example-card">
+    <img mat-card-image src="../../../assets/foto-perfil.png" alt="Photo of Perfil">
+    <mat-card-content>
+      <p>
+        Foto de Perfil
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Cargar</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
 <div class="example-container">
   <mat-form-field>
-    <input matInput placeholder="Enter your email" [formControl]="email" required>
+    <input matInput placeholder="Digite su Correo" [formControl]="email" required>
     <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+    <input matInput placeholder="Digite su Contraseña" [type]="hide ? 'password' : 'text'">
     <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
   </mat-form-field>
 </div>
 <div class="container-fluid">
   <div class="row center-xs">
     <div class="button-row">
-      <button mat-raised-button color="primary" routerLink="/dashboard">Login</button>
+      <button mat-raised-button color="primary" routerLink="/dashboard">Ingresar</button>
     </div>
   </div>
 </div>
